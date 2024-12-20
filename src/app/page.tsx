@@ -3,6 +3,7 @@
 import Rome from '@/app/blogs/page';
 import React, { useEffect, useState } from 'react';
 import Create from './components/create';
+import Link from 'next/link';
 
 const Home = () => {
   const [comments, setComments] = useState<any[]>([]);
@@ -59,6 +60,8 @@ const Home = () => {
       )}
       <div className="mt-8">
         <Create addComment={addComment} />
+       <Link href={"https://crudblogging-git-main-nida-pervezs-projects.vercel.app/"}><button className='bg-black text-white ml-64 rounded-lg h-11'>If u want to make your own blog click here</button>
+       </Link>
       </div>
     </div>
   );
