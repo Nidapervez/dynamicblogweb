@@ -59,9 +59,12 @@ const Home = () => {
         </div>
       )}
       <div className="mt-8">
+
+
+      <Link href={"https://crudblogging-git-main-nida-pervezs-projects.vercel.app/"}><button className='bg-black text-white ml-64 rounded-lg h-11'>If u want to make your own blog click here</button>
+      </Link>
         <Create addComment={addComment} />
-       <Link href={"https://crudblogging-git-main-nida-pervezs-projects.vercel.app/"}><button className='bg-black text-white ml-64 rounded-lg h-11'>If u want to make your own blog click here</button>
-       </Link>
+    
       </div>
     </div>
   );
