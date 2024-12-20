@@ -38,6 +38,8 @@ const Home = () => {
   return (
     <div className="max-w-4xl mx-auto p-6 bg-gray-50 rounded-lg shadow-md">
       <Rome />
+      <Link href={"https://crudblogging-git-main-nida-pervezs-projects.vercel.app/"}><button className='bg-black text-white ml-64 rounded-lg h-11'>If u want to make your own blog click here</button>
+      </Link>
       {error && <p className="py-4 text-red-500">{error}</p>}
       {isLoading ? (
         <p className="text-center text-gray-600">Loading comments...</p>
@@ -61,8 +63,7 @@ const Home = () => {
       <div className="mt-8">
 
 
-      <Link href={"https://crudblogging-git-main-nida-pervezs-projects.vercel.app/"}><button className='bg-black text-white ml-64 rounded-lg h-11'>If u want to make your own blog click here</button>
-      </Link>
+    
         <Create addComment={addComment} />
     
       </div>
